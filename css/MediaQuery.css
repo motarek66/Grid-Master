@@ -1,0 +1,238 @@
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto 1fr auto 1fr 1fr 1fr auto auto;
+        grid-template-areas:
+            "block-2 block-2 block-2 block-2"
+            "block-1 block-1 block-1 block-1"
+            "block-3 block-3 block-4 block-4"
+            "block-5 block-5 block-5 block-5"
+            "block-8 block-8 block-7 block-7"
+            "block-6 block-6 block-7 block-7"
+            "block-9 block-9 block-9 block-9"
+            "block-10 block-10 block-10 block-10";
+    }
+
+    /* block-1 */
+    .block-1 {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .block-1 .content {
+        width: 40%;
+    }
+
+
+
+
+
+
+    /* block-5 */
+    .block-5 {
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        position: relative;
+        padding: 50px 15px 0;
+
+    }
+
+    .left-part {
+        width: 30%;
+        justify-content: space-between;
+        
+        
+    }
+
+    .right-part {
+        width: 50%;
+
+    }
+
+
+
+    .left-part .image-pc {
+        
+
+        position: relative;
+        left: -85%;
+        width: 250%;
+        margin-top: 20px;
+        margin-bottom: 0;
+        bottom: -1%;
+        
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+
+
+
+    .container {
+
+        grid-template-columns: 1fr 1fr 1fr 25%;
+        grid-template-rows: 1fr 1fr 1fr 0.5fr;
+        grid-template-areas:
+            "block-1 block-1 block-2 block-2"
+            "block-3 block-5 block-5 block-7"
+            "block-4 block-6 block-6 block-7"
+            "block-8 block-9 block-10 block-10";
+    }
+
+    .block-1 {
+
+        justify-content: space-around;
+    }
+
+    .block-1 .content {
+        width: 40%;
+    }
+
+
+
+
+
+
+
+    /* block-2 */
+
+
+
+
+
+    /* block-3 */
+
+
+
+    /* block-4 */
+
+
+    /* block-5 */
+    .block-5 {
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        position: relative;
+        padding: 50px 15px 0;
+
+    }
+
+    .left-part {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .right-part {
+        width: 50%;
+
+    }
+
+
+
+
+
+    .left-part .image-pc {
+       
+
+        position: relative;
+        left: -85%;
+        width: 250%;
+        max-width: none;
+        margin-top: 20px;
+    }
+
+
+
+    /* block-6 */
+
+
+    /* block-7 */
+
+
+
+
+
+    /* block-8 */
+
+
+
+
+    /* block-9 */
+
+
+
+    /* block-10 */
+
+
+
+
+    .block-10 p {
+        width: 35%;
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
